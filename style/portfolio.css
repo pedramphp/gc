@@ -1,0 +1,200 @@
+/* 
+
+  ::PORTFOLIO PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+.line-divider {
+	background-image: -ms-linear-gradient(left, #FFFFFF 0%, #D4D4D4 20%, #D4D4D4 80%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(left, #FFFFFF 0%, #D4D4D4 20%, #D4D4D4 80%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(left, #FFFFFF 0%, #D4D4D4 20%, #D4D4D4 90%, #FFFFFF 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #FFFFFF), color-stop(0.2, #D4D4D4), color-stop(0.8, #D4D4D4), color-stop(1, #FFFFFF));
+	background-image: -webkit-linear-gradient(left, #FFFFFF 0%, #D4D4D4 20%, #D4D4D4 80%, #FFFFFF 100%);
+	background-image: linear-gradient(left, #FFFFFF 0%, #D4D4D4 20%, #D4D4D4 80%, #FFFFFF 100%);
+	height: 1px;
+	margin: 20px 0;
+}
+
+.portfolio-cat-list {
+	margin: 0 29px 0;
+	display: inline-block;
+	width: 920px;
+}
+
+.portfolio-cat-list.first {
+	margin-top: 29px;
+}
+
+.portfolio-cat-list.last {
+	border-bottom: 0;
+	margin-bottom: 20px;
+}
+
+.portfolio-cat-list li {
+	float: left;
+	width: 33.3%;
+	height: 380px;
+}
+
+.portfolio-cat-list a {
+	color: #333;
+	padding: 10px;
+	height: 360px;
+	float: left;
+	border: 1px solid #fff;
+	cursor: pointer;
+}
+
+.portfolio-cat-list a:hover {
+	background-color: #f3f3f3;
+	border: 1px solid #d4d4d4;
+	box-shadow: 0 0 3px rgba(0,0,0,.3) inset;
+	text-decoration: none;
+}
+
+.portfolio-cat-list a:active {
+	background-color: #d6d6d6;
+	box-shadow: 0 0 3px rgba(0,0,0,.4) inset;
+	border: 1px solid #949494;
+}
+
+.portfolio-cat-list figure {
+	background: transparent url("images/portfolio/bg-cat.png") no-repeat;
+	width: 285px;
+	height: 196px;
+	margin: 0 auto 20px;
+}
+
+.portfolio-cat-list figure img{
+	width: 245px;
+	height: 162px;
+	margin: 23px 0 0 20px;
+}
+
+.portfolio-cat-list span {
+	font-family: 'Armata', Arial;
+	font-weight: 600;
+	font-size: 17px;
+	margin: 0 15px;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.portfolio-cat-list p {
+	margin: 0 15px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.portfolio-cat-list small{
+	font-size: 70%;
+}
+
+
+.sub-category {
+	margin-bottom: 20px;
+}
+
+.sub-category li {
+	margin-right: 4px;
+}
+
+.sub-category li a {
+	padding: 2px 8px;
+	position: relative;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.sub-category li a:hover, .sub-category li.active a {
+	background-color: #3681c6;
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+.sub-category li a:hover:before, .sub-category li.active a:before,
+.sub-category li .sub-category-before, .sub-category li.active .sub-category-before {
+	position: absolute;
+	bottom: -6px;
+	left: 50%;
+	margin-left: -8px;
+	content:"";
+	display: block;
+	width: 0;
+	height:0;
+	border-width: 6px 8px 0 8px;
+	border-color: #3681c6 transparent transparent transparent;
+	border-style: solid;
+}
+
+.portfolio-gallery-list {
+	margin: 30px;
+	display: inline-block;
+	text-align: center;
+}
+
+.portfolio-gallery-list li {
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-color: #f0f0f0;
+	position: relative;
+	border: 1px solid #d4d4d4;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	padding: 10px;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+.portfolio-gallery-list li.no-margin{
+	margin-right:0;
+}
+
+.portfolio-gallery-list li:before {
+	position: absolute;
+	background: transparent url("images/portfolio/bg-gallery-shadow.png") no-repeat;
+	left: 0;
+	bottom: -15px;
+	width: 290px;
+	height: 15px;
+	content:"";
+}
+
+.portfolio-gallery-list a{
+	display: block;
+	position: relative;
+	width: 268px;
+	height: 182px;
+	color: #333;
+}
+
+.portfolio-gallery-list a:hover{
+	text-decoration: none;
+}
+
+.portfolio-gallery-list span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 268px;
+	height: 182px;
+	z-index: 2;
+	background: transparent url("images/portfolio/bg-gallery-hover.png") no-repeat center center;
+	display: none;
+}
+
+.portfolio-gallery-list a:hover span {
+	display: block;
+}

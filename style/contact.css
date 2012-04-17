@@ -1,0 +1,220 @@
+/* 
+
+  ::CONTACT PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+.contact-form {
+	margin: 40px auto;
+	width: 80%;
+}
+
+.contact-form form > div{
+	display: inline-block;
+	width: 100%;
+}
+
+.contact-form div p{
+	float: left;
+	width: 50%;
+	padding: 0;
+	position: relative;
+}
+
+.contact-form div p .notification{
+	position: absolute;
+	right: 10px;
+	top: 0;
+	font-size: 11px;
+}
+
+.contact-form div.fullwidth-row p{
+	width: 100%;
+}
+
+.contact-form div p > *{
+	margin-left: 10px;
+}
+
+.contact-form div sup{
+	color: #ff3333;
+}
+
+.contact-form label, .contact-form input{
+	display: block;
+}
+
+.contact-form input, .contact-form textarea, .contact-form select {
+	width: 360px;
+	padding: 5px;
+	background-color: #f7f7f7;
+	border: 1px solid #dedede;
+	font-size: 13px;
+	color: #666;
+}
+
+.contact-form select {
+	width: 371px;
+}
+
+.contact-form textarea {
+	width: 750px;
+	resize: vertical;
+	height: 100px;
+	min-height: 100px
+}
+
+.contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus {
+	background-color: #ffffc2;
+	border-color: #eaeaab;
+	color: #000;
+}
+
+.contact-form .error input,
+.contact-form .error input:focus, .contact-form .error textarea:focus, .contact-form .error select:focus {
+	color: #cc3333;
+	background-color: #ffcece;
+	border-color: #ffa6a6;
+	background-image: none;
+}
+
+.contact-form .error .notification{
+	color: #cc3333;
+}
+
+.btn-container{
+	height: 40px;
+	margin-right: 14px;
+	float: right;
+	display: inline;
+}
+
+a.send-btn {
+	background-color: #3586b8;
+	background-image: -ms-linear-gradient(top, #2E78A5 0%, #2E78A5 100%);
+	background-image: -moz-linear-gradient(top, #2E78A5 0%, #2E78A5 100%);
+	background-image: -o-linear-gradient(top, #2E78A5 0%, #2E78A5 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2E78A5), color-stop(1, #2E78A5));
+	background-image: -webkit-linear-gradient(top, #2E78A5 0%, #2E78A5 100%);
+	background-image: linear-gradient(top, #2E78A5 0%, #2E78A5 100%);
+	border: 1px solid #3a87b7;
+	color: #fff;
+	text-shadow: -1px -1px 0 #19577e;
+	position: relative;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding: 0 15px;
+	box-shadow: 0 5px 0 1px #1e5c83;
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+	cursor: pointer;
+	float: right;
+}
+
+a.send-btn:hover {
+	box-shadow: 0 2px 0 1px #1e5c83;
+	text-decoration: none;
+	margin-top: 5px;
+}
+
+.status {
+	padding: 3px 10px 2px 30px;
+	float: left;
+}
+
+.status.success {
+	background: url("images/contact/icon-tick.png") no-repeat scroll 10px center #AEFFBF;
+    border: 1px solid #7dff99;
+}
+
+.status.error {
+	background: #ffa9a9 url("images/contact/icon-cross.png") no-repeat 10px center;
+	border: 1px solid #ff8484;
+}
+
+
+.content-footer {
+	float: left;
+	width: 940px;
+}
+
+.ie7 .content-footer {
+	display: inline-block;
+	float: none;
+}
+
+.map {
+	float: left;
+	width: 470px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.map header {
+	width: 384px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.map header h5 {
+	float: left;
+}
+
+.map header a {
+	float: right;
+}
+
+.map section{
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-color: #f0f0f0;
+	border: 1px solid #d4d4d4;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	padding: 10px;
+	display: inline-block;
+	width: 362px;
+	height: 280px;
+}
+
+.map section aside{
+	width: 362px;
+	height: 202px;
+	border: 1px solid #d4d4d4;
+}
+
+.map section address{
+	text-align: center;
+}
+
+.map address p{
+	margin-top: 5px;
+}
+
+#map1 address p{
+	padding-top: 10px;
+}
+
+
+
+.contact-form .required{
+    background-image: url("images/contact/required.png");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+
+.contact-form select.required{
+    background-position: 303px 0%;
+}

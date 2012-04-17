@@ -1,0 +1,19 @@
+<header id="header">
+	<h1 id="logo"><a href="./"></a></h1>
+	<aside id="right-section">
+		<div id="call-us">
+			<span>Call us: 703-568-5888</span>
+		</div>
+		<nav id="main-menu">
+			<ul>
+				<!--{foreach from=$SiteData.mainNav key=k item=nav name=nav}-->
+				<li<!--{if $nav.active}--> class="active"<!--{/if}--><!--{if $smarty.foreach.nav.first}--> id="first"<!--{/if}--><!--{if $smarty.foreach.nav.last}--> id="last"<!--{/if}-->>
+					<a href="<!--{$nav.url}-->">
+						<span><!--{$nav.value}--></span>
+					</a>
+				</li>
+				<!--{/foreach}-->
+			</ul>
+		</nav>
+	</aside>
+</header>

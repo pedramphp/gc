@@ -1,0 +1,98 @@
+/* 
+
+  ::BRANDS PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+.brands-content {
+	padding: 40px;
+}
+
+.brands-content li{
+	float: left;
+	width: 100%;
+	padding: 20px 0;
+	background: transparent url("images/line-divider.png") no-repeat center bottom;
+	margin-bottom: 20px;
+}
+
+.brands-content li.last{
+	padding-bottom: 0;
+	margin-bttom: 0;
+	background: none;
+}
+
+.brands-content li a > *{
+	width: 400px
+}
+
+.brands-content li a {
+	color: #333;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.brands-content li a:hover {
+	color: #555;
+	text-decoration: none;
+}
+
+.brands-content li a:hover strong{
+	text-decoration: underline;
+}
+
+
+.brands-content li a img{
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	}
+
+.brands-content li a img:hover{
+	-webkit-transition: all .2s linear .2;
+	-moz-transition: all .2s linear .2;
+	-o-transition: all .2s linear .2;
+	transition: all .2s linear .2;
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.brands-content li a:hover img{
+
+}
+
+.brands-content figure, .brands-content li.right span {
+	float: left;
+}
+
+.brands-content span, .brands-content li.right figure {
+	float: right;
+}
+
+.brands-content figure {
+	text-align: center;
+	position: relative;
+	height: 130px
+}
+
+.brands-content figure img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -61px;
+	margin-left: -183px;
+	width: 365px;
+	height: 122px;
+}
+
+.brands-content a span {
+	width: 500px
+}

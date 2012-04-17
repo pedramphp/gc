@@ -1,0 +1,77 @@
+/* 
+
+  ::FAQ PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+.faq-list {
+	margin: 30px ;
+}
+
+.faq-list li {
+	margin-bottom: 10px;
+}
+
+.faq-list li > a {
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-color: #f0f0f0;
+	height: 36px;
+	line-height: 38px;
+	display: inline-block;
+	width: 876px;
+	padding: 0 10px 0 30px;
+	border: 1px solid #d4d4d4;
+	box-shadow: 0 1px 2px rgba(0,0,0,.4);
+	color: #333;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	position: relative;
+}
+
+.faq-list li > a:hover {
+	text-decoration: none;
+}
+
+.faq-list li > a:before , .faq-list li > .faq-list-before{
+	background: transparent url("images/faq/arrow-toggle.png") no-repeat left -8px;
+	padding-left: 20px;
+	position: absolute;
+	content:"";
+	display: block;
+	width: 10px;
+	height: 15px;
+	left: 10px;
+	top: 9px
+}
+
+.faq-list li.active > a {
+	font-weight: bold;
+}
+
+.faq-list li.active > a:before, .faq-list li.active > .faq-list-before{
+	background-position: left -44px;
+}
+
+.faq-list .answer{
+	background-color: #f7f7f7;
+	border: 1px solid #d4d4d4;
+	border-top: none;
+	margin: 0 10px 25px;
+	padding: 20px;
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	display: none;
+}

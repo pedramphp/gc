@@ -1,0 +1,133 @@
+/* 
+
+  ::SERVICES PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+
+.services-content {
+	padding: 20px;
+}
+
+.services-content p{
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+.services-box {
+	margin-bottom: 30px;
+	display: inline-block
+}
+
+.services-box.last {
+	margin-bottom: 0;
+}
+.services-box h3{
+	color: #1d5487;
+	border-bottom: 3px solid #a3bfd4;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	display: block;
+}
+
+.services-box figure{
+	float: right;
+	margin: 0 0 20px 20px;
+}
+
+.services-box figure img{
+	display: block
+}
+
+.services-box ul{
+	text-align: left;
+	margin: 0 20px;
+	width: 450px;
+}
+
+.services-box li{
+	background-position: left 5px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+	width: 200px;
+	float: left;
+}
+
+#residential-box h3 {
+	color: #ffa740;
+	border-color: #ffe0bc;
+}
+
+#commercial-box h3 {	
+	color: #5bba3e;
+	border-color: #b6eaa6;
+}
+
+#governmental-box h3 {	
+	color: #176ab1;
+	border-color: #92bee3;
+}
+
+.box-container {
+	display: inline-block;
+	width: 800px;
+	padding: 0 70px;
+}
+.box-container li{
+	float: left;
+	width: 50%;
+}
+
+.box-container a{
+	color: #333;
+	position: relative;
+	display: block;
+	width: 340px;
+	margin: 0 auto;
+}
+
+.box-container a:hover{
+	text-decoration: none;
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.box-container a:active{
+	box-shadow: inset -1px 1px 15px rgba(0, 0, 0, 0.3);
+}
+
+.box-container img 	{
+	float: left;
+	margin-right: 10px;
+}
+
+.box-container h6 {
+	margin-top: 8px;
+	font-weight: normal;
+	font-size: 12px;
+	font-family: 'Lucida Grande','Lucida Sans Unicode',Helvetica,Arial,Verdana,sans-serif;
+}
+
+.box-container span {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.box-container a:before{
+	position: absolute;
+	content:"";
+	top: 20px;
+	right: 30px;
+	width: 38px;
+	height: 38px;
+	background: transparent url("images/services/arrow-btn-right.png") no-repeat;
+}
+
+.box-container a:hover:before{
+	background-position: 0 bottom;
+}

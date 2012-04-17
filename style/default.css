@@ -1,0 +1,896 @@
+/* 
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+
+  DIRECTORY
+  ==============  
+  - GENERAL ADJUSTMENTS ( coloring, @font-face )
+  - HEADER
+  - CONTENT
+  - FOOTER
+*/
+
+
+
+/*   GENERAL ADJUSTMENTS
+=================*/
+
+body {
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+	background: transparent url("images/bg.png") repeat;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.8em;
+	color: #333;
+}
+
+a, a:link { color: #0088cc; }
+a:hover { text-decoration: underline; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Armata', Arial; font-weight: 600;}
+h1 { font-size: 35px}
+h2 { font-size: 25px}
+h3 { font-size: 22px}
+h4 { font-size: 18px}
+h5 { font-size: 14px}
+h6 { font-size: 13px}
+
+b { font-weight: bold}
+strong { color: #0088cc; font-weight: inherit}
+.red { color: #ff2200 !important;}
+
+.floatLeft { float: left}
+.floatRight { float: right}
+
+.clr { clear: both; }
+
+.wp {
+	padding: 0 20px;
+}
+
+nav ul, nav li{
+	display: inline-block;
+}
+
+#wrapper {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+/*   HEADER
+=================*/
+
+#header {
+	display: inline-block;
+	width: 100%;
+}
+
+#header h1 {
+	float: left;
+	width: 212px;
+	height: 96px;
+	margin-top: 18px;
+}
+
+#header h1 a{
+	width: 212px;
+	height: 96px;
+	background: transparent url("images/logo-goalconstruction.png") no-repeat;
+	float: left;
+}
+
+#right-section{
+	float: right;
+	margin: 10px 0 20px;
+}
+
+
+#call-us {
+	margin: 10px 0 20px;
+	float: right;
+}
+
+#call-us > * {
+	float: right
+}
+
+#call-us span {
+	text-align: right;
+	background: transparent url("images/icon-phone-header.png") no-repeat left center;
+	padding-left: 25px;
+	height: 24px;
+	float: right;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+#call-us nav{
+	margin-left: 10px;
+}
+
+#call-us a{
+	width: 16px;
+	height: 20px;
+	background: transparent url("images/icon-socials-header.png") no-repeat;
+	float: left;
+	margin-left: 5px;
+}
+
+#call-us a.fb {
+	background-position: left top;
+}
+
+#call-us a.fb:hover {
+	background-position: left bottom;
+}
+
+#call-us a.tw {
+	background-position: right top;
+}
+
+#call-us a.tw:hover {
+	background-position: right bottom;
+}
+
+
+#main-menu {
+	background: transparent url("images/bg-menu.png") no-repeat;
+    height: 47px;
+	width: 730px;
+	clear: both;
+	float: right;
+}
+
+#main-menu li{
+	float: left;
+	height: 47px;
+	padding: 0 13px 0 0;
+	background: transparent url("images/bullet-seprator.png") no-repeat right 50%;
+}
+
+#main-menu li#first {
+	margin-left: 4px;
+}
+
+#main-menu li#last{
+	padding-right: 0;
+	background: none;
+}
+
+#main-menu li a {
+	font-size: 9.7pt;
+	font-weight: 600;
+	font-family: 'Armata', Arial;
+	color: #333;
+	margin-top: -7px;
+	padding-left: 4px;
+	float: left;
+	height: 61px;
+	line-height: 61px;
+	cursor: pointer;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #main-menu li a { letter-spacing: -1px; }
+}
+
+#main-menu li a span{
+	float: left;
+	height: 61px;
+	padding: 0 14px 0 10px;
+	margin-right: -8px;
+}
+
+#main-menu li a:hover, #main-menu li.active a {
+	text-decoration: none;
+	background: transparent url("images/bg-menu-hover.png") no-repeat left top;
+	color: #fff;
+}
+
+#main-menu li a:hover span, #main-menu li.active a span{
+	background: transparent url("images/bg-menu-hover.png") no-repeat right top;
+}
+
+#slide-picture {
+	margin-top: 30px;
+	width: 960px;
+	height: 380px;
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+	padding: 9px;
+	overflow: hidden;
+}
+
+#slide-picture li {
+	position: relative;
+	width: 961px;
+	height: 360px;
+}
+
+#slide-picture li .slide-description{
+	background: transparent url("images/bg-transparent-white.png") repeat;
+	font-size: 35px;
+	font-family: 'Armata', Arial;
+	color: #333;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	line-height: 40px;
+	padding: 25px 70px;
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+}
+
+#slide-picture li strong{
+	font-family: 'Parisienne', cursive;
+	color: inherit;
+}
+
+#slide-navigation {
+	background: transparent url("images/bg-divider.png") repeat-x left center;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+#slide-navigation-buttons {
+	background: transparent url("images/bg.png") repeat;
+	margin: 20px auto;
+	padding: 0 5px;
+}
+
+#slide-navigation-buttons li {
+	float: left;
+	margin: 0 3px;
+}
+
+#slide-navigation-buttons li a {
+	background: transparent url("images/bg-slider-nav.png") no-repeat;
+	width: 14px;
+	height: 14px;
+	display: block;
+}
+
+#slide-navigation-buttons li a:hover, #slide-navigation-buttons li.active a {
+	background-position: right top;
+}
+
+/*   CONTENT
+=================*/
+
+.line-divider {
+	background: transparent url("images/bg-divider.png") repeat-x left center;
+	width: 100%;
+	display: inline-block;
+	magin: 20px 0;
+}
+
+#welcome-section {
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+#welcome-content {
+	width: 500px;
+	float: left;
+}
+
+#welcome-content h2 {
+	margin-bottom: 20px;
+}
+
+#welcome-content .get-started {
+	margin: 20px auto;
+	width: 308px;
+	height: 71px;
+}
+
+#welcome-content p {
+	margin-bottom: 10px;
+}
+
+#welcome-content .get-started a{
+	background: transparent url("images/btn-getstarted.png") no-repeat;	
+	width: 308px;
+	height: 71px;
+	float: left;
+}
+
+#welcome-content .get-started a:hover{
+	background-position: 0 bottom;
+}
+
+#welcome-picture {
+	width: 432px;
+	height: 286px;
+	float: right;
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+	padding: 9px;
+}
+
+.home-section {
+	margin-bottom: 50px;
+	display: inline-block;
+	width: 100%;
+}
+
+.section-title {
+	background: transparent url("images/bg-divider.png") repeat-x left center;
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.section-title h2{
+	background: transparent url("images/bg.png") repeat;
+	padding-right: 10px;
+	float: left;
+}
+
+.section-title h2 span {
+	background: transparent url("images/icon-titles.png") no-repeat;
+	padding-left: 40px;
+	color: #000;
+	height: 30px;
+}
+
+#services-section .section-title span {
+	background-position: left 2px;
+}
+
+#portfolio-section .section-title {
+	margin-bottom: 40px;
+}
+
+#portfolio-section .section-title span {
+	background-position: left -30px;
+}
+
+#brands-section .section-title span {
+	background-position: left -60px;
+}
+
+#services-box div{
+	width: 294px;
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+	padding: 65px 9px 9px;
+	float: left;
+	margin-right: 19px;
+	position: relative;
+	font-size: 12px;
+}
+
+#services-box div:hover{
+	box-shadow: 2px 5px 9px rgba(0,0,0,0.3) inset;
+}
+
+#services-box div:active{
+	box-shadow: 3px 0px 34px rgba(0, 0, 0, 0.5) inset;
+}
+
+
+#services-box div h3 {
+	background: transparent url("images/bg-servicetitle.png") no-repeat;
+	width: 326px;
+	height: 47px;
+	line-height: 40px;
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	left: -7px;
+	text-align: center;
+	font-size: 20px;
+}
+
+#services-box div#govermental-box {
+	margin-right: 0;
+}
+
+#services-box div#residential-box h3 {
+	background-position: 0 0;
+	text-shadow: 1px 1px 0 #df8e2f;
+}
+
+#services-box div#commercial-box h3 {
+	background-position: 0 -47px;
+	text-shadow: 1px 1px 0 #45982c;
+}
+
+#services-box div#govermental-box h3 {
+	background-position: 0 -94px;
+	text-shadow: 1px 1px 0 #2464a0;
+}
+
+#services-box div ul {
+	margin: 20px;
+}
+
+#services-box div li {
+	background-position: left 5px;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+#services-box .box-picture {
+	margin: 0 auto;
+	width: 282px;
+	height: 155px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+#services-box .more{
+	background: transparent url("images/bg-more-triangle.png") no-repeat;
+	width: 47px;
+	height: 23px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #fff;
+	padding: 25px 0 0 45px;
+}
+
+div#residential-box .more{
+	background-position: 0 0;
+}
+
+div#commercial-box .more{
+	background-position: -92px 0;
+}
+
+div#govermental-box .more{
+	background-position: -184px 0;
+}
+
+div#residential-box li {
+	background-image: url("images/icon-tick-orange.png");
+}
+
+div#commercial-box li {
+	background-image: url("images/icon-tick-green.png");
+}
+
+div#govermental-box li {
+	background-image: url("images/icon-tick-blue.png");
+}
+
+#portfolio-section .section-title div {
+	background: transparent url("images/bg.png") repeat;
+	float: right;
+}
+
+#portfolio-section a.view-all {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding-left: 5px;
+	background: transparent url("images/bg.png") repeat;
+	color: #d3a400
+}
+
+#portfolio-section a.view-all span{
+	padding-right: 25px;
+	background: transparent url("images/arrow-all-link.png") no-repeat right center;
+}
+
+#portfolio-section a.view-all:hover span{
+	text-decoration: none;
+}
+
+
+#portfolio-holder {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+#portfolio-holder ul {
+	margin: 0 auto;
+	width: 900px;
+}
+
+#portfolio-holder .prev-button, #portfolio-holder .next-button{
+	background: transparent url("images/arrow-carousel.png") no-repeat;
+	width: 23px;
+	height: 53px;
+	top: 32px;
+	position: absolute;
+}
+
+#portfolio-holder .prev-button{
+	left: 0;
+	background-position: left top;
+}
+
+#portfolio-holder .prev-button:hover{
+	background-position: left -53px;
+}
+
+#portfolio-holder .prev-button.disable{
+	background-position: left -106px;
+}
+
+#portfolio-holder .next-button{
+	right: 0;
+	background-position: right top;
+}
+
+#portfolio-holder .next-button:hover{
+	background-position: right -53px;
+}
+
+#portfolio-holder .next-button.disable{
+	background-position: right -106px;
+}
+
+#portfolio-holder ul li {
+	width: 20%;
+	float: left;
+	text-align: center;
+	height: 130px;
+}
+
+#portfolio-holder li div{
+	width: 150px;
+	height: 100px;
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+	padding: 7px;
+	margin: 0 auto;
+}
+
+#portfolio-holder li div:hover{
+	height: 130px;
+}
+
+#portfolio-holder li .view-in-gallery {
+	display: none;
+	background-color: #d3a400;
+	padding: 0 10px;
+	color: #fff;
+	margin-top: 7px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	font-size: 12px;
+}
+
+#portfolio-holder li .view-in-gallery:hover {
+	background-color: #e7b400;
+	text-decoration: none;
+}
+
+#portfolio-holder li div:hover .view-in-gallery{
+	display: inline-block;
+}
+
+#portfolio-holder ul .pic-holder{
+	position: relative;
+	width: 150px;
+	height: 100px;
+	overflow: hidden;
+	display: block;
+	cursor: pointer;
+}
+#portfolio-holder ul .pic-holder span{
+	display: none;
+	background: transparent url("images/bg-zoom.png") no-repeat center center;
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#portfolio-holder ul .pic-holder:hover span{
+	display: block;
+}
+
+#brands-section {
+	margin-bottom: 0;
+}
+
+#brands-section section{
+	padding: 20px 0;
+	float: left;
+	width: 100%;
+}
+
+#brands-section .section-title{
+	float: left;
+	background: none;
+	margin-top: 30px;
+	width: auto;
+}
+
+#brands-holder {
+	float: right;
+	width: 800px;
+	height: 70px;
+	background-color: #fff;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+	border: 1px solid #ccc;
+	padding: 10px 7px;
+	position: relative;
+}
+
+#brands-list{
+	width: 735px;
+	height: 50px;
+	margin: 10px auto;
+	overflow: hidden;
+}
+
+#brands-list li{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+
+#brands-holder .prev-button, #brands-holder .next-button{
+	background: transparent url("images/arrow-carousel-mini.png") no-repeat;
+	width: 13px;
+	height: 31px;
+	top: 30px;
+	position: absolute;
+}
+
+#brands-holder .prev-button{
+	background-position: left top;
+	left: 10px;
+}
+
+#brands-holder .prev-button:hover{
+	background-position: left -31px;
+}
+
+#brands-holder .prev-button.disable{
+	background-position: left -62px;
+}
+
+#brands-holder .next-button{
+	background-position: right top;
+	right: 10px;
+}
+
+#brands-holder .next-button:hover{
+	background-position: right -31px;
+}
+
+#brands-holder .next-button.disable{
+	background-position: right -62px;
+}
+
+.content-section {
+	margin-top: 20px;
+}
+
+.content-section > header {
+	background: transparent url("images/bg-divider.png") repeat-x left bottom;
+	width: 980px;
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.content-section > header.has-sub-category {
+	margin-bottom: 0;
+}
+
+.content-section > header hgroup {
+	float: left;
+}
+
+.content-section > header h5 {
+	font-family: "Lucida Grande";
+	font-weight: normal;
+	width: 450px;
+	line-height: 16px;
+	margin-top: 5px;
+}
+
+.content-section .breadcrumb {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+
+.content-box {
+	border: 1px solid #d4d4d4;
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0,0,0,0.3) inset, 0 0 2px #fff;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+
+.loading {
+	background: transparent url("images/indicator.gif") no-repeat center center;
+}
+
+.content-footer {
+	background-color: #f7f7f7;
+	border-top: 1px solid #cfcfcf;
+	padding: 20px;
+}
+
+.pagination {	
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+.pagination > *{
+	float: left;
+	padding: 0 8px;
+	margin-right: 3px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.pagination a {
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-color: #f0f0f0;
+	border: 1px solid #d4d4d4;
+}
+
+.pagination a:hover,.pagination span {
+	background-image: -ms-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
+	background-image: -moz-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
+	background-image: -o-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #125792), color-stop(1, #1c6db3));
+	background-image: -webkit-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
+	background-image: linear-gradient(bottom, #125792 0%, #1c6db3 100%);
+	background-color: #1c6db3;
+	border: 1px solid #104f86;
+	color: #fff;
+}
+
+.pagination a:hover {
+	text-decoration: none;
+}
+
+.box-style {
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F0F0F0));
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-image: linear-gradient(top, #FFFFFF 0%, #F0F0F0 100%);
+	background-color: #f0f0f0;
+	position: relative;
+	border: 1px solid #d4d4d4;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	padding: 10px;
+}
+
+
+/*   FOOTER
+=================*/
+
+#footer {
+	background: transparent url("images/bg-divider.png") repeat-x left top;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+    width: 100%;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+#footer p{
+	color: #666;
+}
+
+#footer label {
+	cursor: inherit;
+}
+
+#footer aside{
+	float: left;
+}
+
+#footer aside > * {
+	clear: both;
+	float: left;
+	margin-bottom: 2px;
+}
+
+#footer-links li{
+	padding: 0 11px 0 7px;
+	float: left;
+	background: transparent url("images/bullet-seprator.png") no-repeat right 50%;
+}
+
+#footer-links li.first{
+	padding-left: 0;
+}
+
+#footer-links li.last{
+	background: none;
+}
+
+#footer-links a {
+	color: #d3a400;
+}
+
+#footer-socials {
+	display: block;
+}
+
+#footer-socials *{
+	float: left;
+}
+
+#footer-socials label {
+	margin-right: 5px;
+	color: #666;
+}
+
+#footer-socials a {
+	background: transparent url("images/icon-socials-footer.png") no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+
+#footer-socials a.fb {
+	background-position: left top;
+}
+
+#footer-socials a.tw {
+	background-position: right top;
+}
+
+#footer .mexo-logo {
+	width: 94px;
+	height: 22px;
+	margin-left: 8px;
+}
+
+#footer section {
+	float: right;
+}
+
+#footer section div {
+	margin-bottom: 5px;
+}
+
+#footer section label {
+	font-family: 'Armata', Arial;
+	font-size: 14px;
+}
+
+#footer section p{
+	line-height: 14px;
+	font-size: 11px;
+}
+
+
+.footer-designed-mexo p,.footer-designed-mexo a{
+	height: 22px;
+	line-height: 22px;
+}
+
+.footer-designed-mexo img{
+	vertical-align: middle;
+	margin-top: -4px;
+}

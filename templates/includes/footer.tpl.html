@@ -1,0 +1,27 @@
+<footer id="footer">
+	<aside>
+		<nav id="footer-links">
+			<!--{foreach from=$SiteData.mainNav key=k item=nav name=nav}-->
+			<li<!--{if $smarty.foreach.nav.first}--> class="first"<!--{/if}--><!--{if $smarty.foreach.nav.last}--> class="last"<!--{/if}-->>
+				<a href="<!--{$nav.url}-->">
+					<span><!--{$nav.value}--></span>
+				</a>
+			</li>
+			<!--{/foreach}-->
+		</nav>
+		<p>Copyright &copy; 2012 GoalConstruction. All rights reserved.</p>
+		<p class="footer-designed-mexo">Designed and developed by <a class="mexo-logo" href="http://mexo.co"><img src="<!--{$imagePath}-->logo-mexo.png" alt="Mexo"/></a></p>
+	</aside>
+	<section>
+		<div>
+			<label>Headquarter</label>
+			<p>1808 Old Meadow Rd #1414 McLean VA 22102</p>
+			<p>Tel: 703-568-5888 | Fax: 703-714-1414</p>
+		</div>
+		<div>	
+			<label>Sales Office</label>
+			<p>HD PLUS Construction HQ 4816 Dodson Dr. Annandale, VA 22003</p>
+			<p>Tel: 703-256-5498 | Fax: 703-256-5499</p>
+		</div>
+	</section>
+</footer>

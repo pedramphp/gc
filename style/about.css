@@ -1,0 +1,179 @@
+/* 
+
+  ::ABOUT PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+.about-content {
+	padding: 20px;
+}
+
+.about-section {
+	margin-bottom: 20px;
+	display: inline-block
+}
+
+.about-section.last {
+	margin-bottom: 0;
+}
+.about-section h3{
+	color: #1d5487;
+	border-bottom: 3px solid #a3bfd4;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	display: block;
+}
+
+.about-section p{
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+.about-section figure{
+	float: right;
+	margin: 0 0 10px 20px;
+}
+
+.about-section figure img{
+	display: block;
+	margin: 0 auto;
+}
+
+.about-section figure.logo-gc{
+	width: 370px;
+	text-align: center;
+}
+
+.services-container {
+	display: inline-block;
+	text-align: center;
+}
+
+.services-container > div{
+	float: left;
+    margin: 0 13px;
+    width: 265px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.services-container h3{
+	color: #333;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.services-container ul{
+	text-align: left;
+	margin: 20px;
+}
+
+.services-container li{
+	background-position: left 5px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.btn-container{
+	height: 40px;
+	display: inline-block;
+}
+
+a.service-btn {
+	background-color: #EB8611;
+	background-image: -ms-linear-gradient(top, #FFAD4C 0%, #EB8611 100%);
+	background-image: -moz-linear-gradient(top, #FFAD4C 0%, #EB8611 100%);
+	background-image: -o-linear-gradient(top, #FFAD4C 0%, #EB8611 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFAD4C), color-stop(1, #EB8611));
+	background-image: -webkit-linear-gradient(top, #FFAD4C 0%, #EB8611 100%);
+	background-image: linear-gradient(top, #FFAD4C 0%, #EB8611 100%);
+	border: 1px solid #FFAD4C;
+	color: #fff;
+	text-shadow: -1px -1px 0 #b46204;
+	position: relative;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding: 4px 15px;
+	box-shadow: 0 5px 0 1px #af5e00;
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+	color: #fff;
+	float: left;
+	cursor: pointer;
+}
+
+a.service-btn:hover {
+	margin-top: 5px;
+	text-decoration: none;
+	box-shadow: 0 2px 0 1px #af5e00;
+}
+
+a.service-btn:active{
+	margin-top: 5px;
+	box-shadow: 0 1px 0 1px #af5e00;
+	background-image: -ms-linear-gradient(bottom, #FFAD4C 0%, #EB8611 100%);
+	background-image: -moz-linear-gradient(bottom, #FFAD4C 0%, #EB8611 100%);
+	background-image: -o-linear-gradient(bottom, #FFAD4C 0%, #EB8611 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FFAD4C), color-stop(1, #EB8611));
+	background-image: -webkit-linear-gradient(bottom, #FFAD4C 0%, #EB8611 100%);
+	background-image: linear-gradient(bottom, #FFAD4C 0%, #EB8611 100%);
+}
+
+#commercial-box a.service-btn {
+	background-color: #66c24a;
+	background-image: -ms-linear-gradient(top, #66c24a 0%, #46ac26 100%);
+	background-image: -moz-linear-gradient(top, #66c24a 0%, #46ac26 100%);
+	background-image: -o-linear-gradient(top, #66c24a 0%, #46ac26 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #66c24a), color-stop(1, #46ac26));
+	background-image: -webkit-linear-gradient(top, #66c24a 0%, #46ac26 100%);
+	background-image: linear-gradient(top, #66c24a 0%, #46ac26 100%);
+	border: 1px solid #66c24a;
+	text-shadow: -1px -1px 0 #34861c;
+	box-shadow: 0 5px 0 1px #32821a;
+}
+
+#commercial-box a.service-btn:hover {
+	box-shadow: 0 2px 0 1px #32821a;
+}
+
+#commercial-box a.service-btn:active {
+	background-image: -ms-linear-gradient(bottom, #66c24a 0%, #46ac26 100%);
+	background-image: -moz-linear-gradient(bottom, #66c24a 0%, #46ac26 100%);
+	background-image: -o-linear-gradient(bottom, #66c24a 0%, #46ac26 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #66c24a), color-stop(1, #46ac26));
+	background-image: -webkit-linear-gradient(bottom, #66c24a 0%, #46ac26 100%);
+	background-image: linear-gradient(bottom, #66c24a 0%, #46ac26 100%);
+}
+
+#govermental-box a.service-btn {
+	background-color: #3586b8;
+	background-image: -ms-linear-gradient(top, #3a87b7 0%, #2e78a5 100%);
+	background-image: -moz-linear-gradient(top, #3a87b7 0%, #2e78a5 100%);
+	background-image: -o-linear-gradient(top, #3a87b7 0%, #2e78a5 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3a87b7), color-stop(1, #2e78a5));
+	background-image: -webkit-linear-gradient(top, #3a87b7 0%, #2e78a5 100%);
+	background-image: linear-gradient(top, #3a87b7 0%, #2e78a5 100%);
+	border: 1px solid #2e78a5;
+	text-shadow: -1px -1px 0 #19577e;
+	box-shadow: 0 5px 0 1px #1e5c83;
+}
+
+#govermental-box a.service-btn:hover {
+	box-shadow: 0 2px 0 1px #1e5c83;
+}
+
+#govermental-box a.service-btn:active {
+	background-image: -ms-linear-gradient(bottom, #3a87b7 0%, #2e78a5 100%);
+	background-image: -moz-linear-gradient(bottom, #3a87b7 0%, #2e78a5 100%);
+	background-image: -o-linear-gradient(bottom, #3a87b7 0%, #2e78a5 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3a87b7), color-stop(1, #2e78a5));
+	background-image: -webkit-linear-gradient(bottom, #3a87b7 0%, #2e78a5 100%);
+	background-image: linear-gradient(bottom, #3a87b7 0%, #2e78a5 100%);
+}

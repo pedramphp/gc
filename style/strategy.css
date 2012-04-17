@@ -1,0 +1,191 @@
+/* 
+
+  ::STRATEGY PAGE
+	
+  :: GOAL CONSTRUCTION Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
+  :: Version: 1.0 - MAR 2012
+
+*/
+
+.strategy-content {
+	padding: 20px;
+}
+
+.strategy-content p{
+	padding-bottom: 20px;
+}
+
+.phases-box {
+	margin-top: 40px;
+	background-color: #f7f7f7;
+	border: 1px solid #cacaca;
+	position: relative;
+}
+
+.phases-box > nav{
+	position: absolute;
+	top: -39px;
+	left: -1px;
+}
+
+.phases-box > nav a{
+	float: left;
+	margin-right: 2px;
+	padding: 7px 15px 8px;
+	background-image: -ms-linear-gradient(top, #F4F4F4 0%, #E4E4E4 100%);
+	background-image: -moz-linear-gradient(top, #F4F4F4 0%, #E4E4E4 100%);
+	background-image: -o-linear-gradient(top, #F4F4F4 0%, #E4E4E4 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #F4F4F4), color-stop(1, #E4E4E4));
+	background-image: -webkit-linear-gradient(top, #F4F4F4 0%, #E4E4E4 100%);
+	background-image: linear-gradient(top, #F4F4F4 0%, #E4E4E4 100%);
+	background-color: #E4E4E4;
+	border: 1px solid #cacaca;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.phases-box > nav span{
+	float: left;
+	height: 22px;
+	color: #999;
+}
+
+.phases-box > nav a:hover, .phases-box > nav a.active{
+	text-decoration: none;
+	background-image: none;
+	background-color: #f7f7f7;
+	border-bottom-color: #f7f7f7;
+	padding-top: 12px;
+	margin-top: -5px;
+}
+
+.phases-box > nav a.design-nav span{
+	background: transparent url("images/strategy/icon-phases-design.png") no-repeat left top;
+	padding-left: 30px;
+}
+
+.phases-box > nav a.design-nav:hover span, .phases-box > nav a.design-nav.active span{
+	background-position: left bottom;
+	color: #0088cc;
+}
+
+.phases-box > nav a.finance-nav span{
+	background: transparent url("images/strategy/icon-phases-finance.png") no-repeat left top;
+	padding-left: 35px;
+}
+
+.phases-box > nav a.finance-nav:hover span, .phases-box > nav a.finance-nav.active span{
+	background-position: left bottom;
+	color: #339933;
+}
+
+.phases-box > nav a.construction-nav span{
+	background: transparent url("images/strategy/icon-phases-construction.png") no-repeat left top;
+	padding-left: 35px;
+}
+
+.phases-box > nav a.construction-nav:hover span, .phases-box > nav a.construction-nav.active span{
+	background-position: left bottom;
+	color: #c29b26;
+}
+
+.phases-box > div {
+	padding: 20px;
+	display: inline-block;
+}
+
+.phases-box > div footer{
+	height: 20px;
+	font-size: 15px;
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%
+}
+
+.phases-box > div footer .next-section{
+	float: right;
+}
+
+.phases-box > div footer .prev-section{
+	float: left;
+}
+
+.numbered-list {
+	display: inline-block;
+}
+
+.numbered-list li{
+	float: left;
+	width: 50%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.numbered-list li span {
+	float: left;
+	margin: 20px 25px 0;
+	padding: 15px 0 0;
+	text-align: center;
+	width: 42px;
+	height: 27px;
+	color: #fff;
+	font-size: 45px;
+	font-weight: bold;
+	font-family: Arial;
+}
+
+.numbered-list li div {
+	float: left;
+	text-align: left;
+	width: 330px
+}
+
+.numbered-list li div h5{
+	margin-bottom: 10px;
+}
+
+.numbered-list li div p{
+	font-size: 12px;
+}
+
+#design-box .numbered-list li span {
+	background: transparent url("images/strategy/design/bg-no.png") no-repeat;
+}
+
+
+#finance-box h4 {
+	margin-bottom: 30px;
+}
+
+#finance-box img {
+	float: right;
+}
+
+#finance-box ul {
+	margin: 30px;
+}
+
+#finance-box li {
+	padding-left: 20px;
+	background: url("images/icon-tick-green.png") no-repeat left 5px;
+}
+
+#finance-box .tel-number {
+	font-family: "Armata";
+	font-weight: bold;
+	font-size: 16px;
+}
+
+
+#construction-box .numbered-list li span {
+	background: transparent url("images/strategy/construction/bg-no.png") no-repeat;
+}
+
+#construction-box .numbered-list li.full-width{
+	float: none;
+    margin: 0 auto;
+    width: 80%;
+}
