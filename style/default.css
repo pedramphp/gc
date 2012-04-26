@@ -138,7 +138,7 @@ nav ul, nav li{
 
 
 #main-menu {
-	background: transparent url("images/bg-menu.png") no-repeat;
+	background: #fff url("images/bg-menu.png") no-repeat;
     height: 47px;
 	width: 730px;
 	clear: both;
@@ -153,7 +153,7 @@ nav ul, nav li{
 }
 
 #main-menu li#first {
-	margin-left: 4px;
+	margin-left: 6px;
 }
 
 #main-menu li#last{
@@ -176,6 +176,8 @@ nav ul, nav li{
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     #main-menu li a { letter-spacing: -1px; }
+    #main-menu li#first { margin-left: 8px; }
+
 }
 
 #main-menu li a span{
@@ -204,18 +206,25 @@ nav ul, nav li{
 	border: 1px solid #ccc;
 	padding: 9px;
 	overflow: hidden;
+	position: relative;
+}
+
+#slide-picture li.active{
+	display: block;
 }
 
 #slide-picture li {
-	position: relative;
+	position: absolute;
 	width: 961px;
 	height: 360px;
+	display: none;
+	left: 9px;
+	top: 9px;
 }
 
 #slide-picture li .slide-description{
 	background: transparent url("images/bg-transparent-white.png") repeat;
 	font-size: 35px;
-	font-family: 'Armata', Arial;
 	color: #333;
 	position: absolute;
 	bottom: 10px;
@@ -354,6 +363,10 @@ nav ul, nav li{
 	background-position: left -30px;
 }
 
+#portfolio-section{
+	margin-bottom:  0;
+}
+
 #brands-section .section-title span {
 	background-position: left -60px;
 }
@@ -363,15 +376,21 @@ nav ul, nav li{
 	background-color: #fff;
 	box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 	border: 1px solid #ccc;
-	padding: 65px 9px 9px;
+	padding: 65px 9px 15px;
 	float: left;
 	margin-right: 19px;
 	position: relative;
 	font-size: 12px;
 }
 
+#services-box div p {
+	height: 140px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
 #services-box div:hover{
-	box-shadow: 2px 5px 9px rgba(0,0,0,0.3) inset;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
 }
 
 #services-box div:active{
@@ -392,7 +411,7 @@ nav ul, nav li{
 	font-size: 20px;
 }
 
-#services-box div#govermental-box {
+#services-box div#governmental-box {
 	margin-right: 0;
 }
 
@@ -406,7 +425,7 @@ nav ul, nav li{
 	text-shadow: 1px 1px 0 #45982c;
 }
 
-#services-box div#govermental-box h3 {
+#services-box div#governmental-box h3 {
 	background-position: 0 -94px;
 	text-shadow: 1px 1px 0 #2464a0;
 }
@@ -429,6 +448,11 @@ nav ul, nav li{
 	position: relative;
 }
 
+#services-box .box-picture img{
+	box-shadow: 3px 3px 5px 0 #666666;
+}
+
+
 #services-box .more{
 	background: transparent url("images/bg-more-triangle.png") no-repeat;
 	width: 47px;
@@ -448,7 +472,7 @@ div#commercial-box .more{
 	background-position: -92px 0;
 }
 
-div#govermental-box .more{
+div#governmental-box .more{
 	background-position: -184px 0;
 }
 
@@ -460,7 +484,7 @@ div#commercial-box li {
 	background-image: url("images/icon-tick-green.png");
 }
 
-div#govermental-box li {
+div#governmental-box li {
 	background-image: url("images/icon-tick-blue.png");
 }
 
@@ -481,6 +505,7 @@ div#govermental-box li {
 #portfolio-section a.view-all span{
 	padding-right: 25px;
 	background: transparent url("images/arrow-all-link.png") no-repeat right center;
+	padding-top: 3px;
 }
 
 #portfolio-section a.view-all:hover span{
@@ -494,12 +519,17 @@ div#govermental-box li {
 	position: relative;
 }
 
-#portfolio-holder ul {
+#portfolio-holder nav {
 	margin: 0 auto;
 	width: 900px;
+	height: 150px
 }
 
-#portfolio-holder .prev-button, #portfolio-holder .next-button{
+#portfolio-holder nav ul{
+	display: block;
+}
+
+#portfolio-holder .prev, #portfolio-holder .next{
 	background: transparent url("images/arrow-carousel.png") no-repeat;
 	width: 23px;
 	height: 53px;
@@ -507,37 +537,37 @@ div#govermental-box li {
 	position: absolute;
 }
 
-#portfolio-holder .prev-button{
+#portfolio-holder .prev{
 	left: 0;
 	background-position: left top;
 }
 
-#portfolio-holder .prev-button:hover{
+#portfolio-holder .prev:hover{
 	background-position: left -53px;
 }
 
-#portfolio-holder .prev-button.disable{
+#portfolio-holder .prev.disable{
 	background-position: left -106px;
 }
 
-#portfolio-holder .next-button{
+#portfolio-holder .next{
 	right: 0;
 	background-position: right top;
 }
 
-#portfolio-holder .next-button:hover{
+#portfolio-holder .next:hover{
 	background-position: right -53px;
 }
 
-#portfolio-holder .next-button.disable{
+#portfolio-holder .next.disable{
 	background-position: right -106px;
 }
 
-#portfolio-holder ul li {
-	width: 20%;
+#portfolio-holder li {
+	width: 181px;
 	float: left;
 	text-align: center;
-	height: 130px;
+	height: 150px;
 }
 
 #portfolio-holder li div{
@@ -554,7 +584,7 @@ div#govermental-box li {
 	height: 130px;
 }
 
-#portfolio-holder li .view-in-gallery {
+#portfolio-holder li div .view-in-gallery {
 	display: none;
 	background-color: #d3a400;
 	padding: 0 10px;
@@ -565,7 +595,7 @@ div#govermental-box li {
 	font-size: 12px;
 }
 
-#portfolio-holder li .view-in-gallery:hover {
+#portfolio-holder li div .view-in-gallery:hover {
 	background-color: #e7b400;
 	text-decoration: none;
 }
@@ -574,7 +604,7 @@ div#govermental-box li {
 	display: inline-block;
 }
 
-#portfolio-holder ul .pic-holder{
+#portfolio-holder .pic-holder{
 	position: relative;
 	width: 150px;
 	height: 100px;
@@ -582,7 +612,7 @@ div#govermental-box li {
 	display: block;
 	cursor: pointer;
 }
-#portfolio-holder ul .pic-holder span{
+#portfolio-holder .pic-holder span{
 	display: none;
 	background: transparent url("images/bg-zoom.png") no-repeat center center;
 	width: 150px;
@@ -592,7 +622,7 @@ div#govermental-box li {
 	top: 0;
 }
 
-#portfolio-holder ul .pic-holder:hover span{
+#portfolio-holder .pic-holder:hover span{
 	display: block;
 }
 
@@ -625,49 +655,65 @@ div#govermental-box li {
 }
 
 #brands-list{
-	width: 735px;
+	width: 790px;/*width: 735px;*/
 	height: 50px;
 	margin: 10px auto;
 	overflow: hidden;
 }
 
 #brands-list li{
-	width: 20%;
+	width: 131px;
 	float: left;
 	text-align: center;
 }
 
-#brands-holder .prev-button, #brands-holder .next-button{
+#brands-list li a {
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+	display: block;
+}
+
+#brands-list li a:hover{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#brands-holder .prev, #brands-holder .next{
 	background: transparent url("images/arrow-carousel-mini.png") no-repeat;
 	width: 13px;
 	height: 31px;
 	top: 30px;
 	position: absolute;
+	display: none;
 }
 
-#brands-holder .prev-button{
+#brands-holder .prev{
 	background-position: left top;
 	left: 10px;
 }
 
-#brands-holder .prev-button:hover{
+#brands-holder .prev:hover{
 	background-position: left -31px;
 }
 
-#brands-holder .prev-button.disable{
+#brands-holder .prev.disable{
 	background-position: left -62px;
 }
 
-#brands-holder .next-button{
+#brands-holder .next{
 	background-position: right top;
 	right: 10px;
 }
 
-#brands-holder .next-button:hover{
+#brands-holder .next:hover{
 	background-position: right -31px;
 }
 
-#brands-holder .next-button.disable{
+#brands-holder .next.disable{
 	background-position: right -62px;
 }
 
@@ -721,7 +767,7 @@ div#govermental-box li {
 
 .content-footer {
 	background-color: #f7f7f7;
-	border-top: 1px solid #cfcfcf;
+	//border-top: 1px solid #cfcfcf;
 	padding: 20px;
 }
 
@@ -751,14 +797,14 @@ div#govermental-box li {
 }
 
 .pagination a:hover,.pagination span {
-	background-image: -ms-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
-	background-image: -moz-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
-	background-image: -o-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #125792), color-stop(1, #1c6db3));
-	background-image: -webkit-linear-gradient(bottom, #125792 0%, #1c6db3 100%);
-	background-image: linear-gradient(bottom, #125792 0%, #1c6db3 100%);
-	background-color: #1c6db3;
-	border: 1px solid #104f86;
+	background-image: -ms-linear-gradient(top, #cc9900 0%, #b18500 100%);
+	background-image: -moz-linear-gradient(top, #cc9900 0%, #b18500 100%);
+	background-image: -o-linear-gradient(top, #cc9900 0%, #b18500 100%);
+	background-image: -webkit-gradient(linear, left top, left top, color-stop(0, #cc9900), color-stop(1, #b18500));
+	background-image: -webkit-linear-gradient(top, #cc9900 0%, #b18500 100%);
+	background-image: linear-gradient(top, #cc9900 0%, #b18500 100%);
+	background-color: #b18500;
+	border: 1px solid #977100;
 	color: #fff;
 }
 
@@ -783,9 +829,13 @@ div#govermental-box li {
 
 /*   FOOTER
 =================*/
+.divider{
+	background: transparent url("images/bg-divider.png") repeat-x left top;
+	width: 100%;
+	height: 5px;
+}
 
 #footer {
-	background: transparent url("images/bg-divider.png") repeat-x left top;
 	padding-top: 20px;
 	margin-bottom: 20px;
 	display: inline-block;
@@ -827,7 +877,7 @@ div#govermental-box li {
 }
 
 #footer-links a {
-	color: #d3a400;
+	color: #D29000;
 }
 
 #footer-socials {

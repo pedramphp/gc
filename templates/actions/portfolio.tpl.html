@@ -5,7 +5,7 @@
 	<header>
 		<hgroup>
 			<h2>Portfolio</h2>
-			<h5>Some text goes here</h5>
+			<h5></h5>
 		</hgroup>
 		<nav class="breadcrumb">
 			<a href="./">Home</a>
@@ -15,13 +15,12 @@
 	<section class="content-box">
 	<!--{foreach from=$SiteData.portfolio.cats key=k item=cat name=cat}-->
 		<!--{if $k % 3 eq 0}-->
-		<ul class="portfolio-cat-list<!--{if $smarty.foreach.cat.first}--> first<!--{/if}--><!--{if count($SiteData.portfolio.cats)-$SiteData.portfolio.cats%3 eq $k}--> last<!--{/if}-->">
+		<ul class="portfolio-cat-list<!--{if $smarty.foreach.cat.first}--> first<!--{else}--><!--{if count($SiteData.portfolio.cats)-(count($SiteData.portfolio.cats)%3) eq $k || count($SiteData.portfolio.cats) % 3 eq 0}--> last<!--{/if}--><!--{/if}-->">
 		<!--{/if}-->
 		<li>
 			<a href="<!--{$cat.url}-->">
 				<figure><img src="<!--{$cat.imageUrl}-->" alt="<!--{$cat.title}-->" /></figure>
 				<span><!--{$cat.title}--> <small>(<!--{$cat.size}--> Images) </small></span>
-				<p><!--{$cat.desc}--></p>
 			</a>
 		</li>
 		<!--{if $k % 3 eq 2 || $smarty.foreach.cat.last}-->
@@ -31,6 +30,17 @@
 			<!--{/if}-->
 		<!--{/if}-->
 	<!--{/foreach}-->
+		<footer class="content-footer">	
+			<nav class="pagination">
+				<!--{for $pageNumber=1 to $SiteData.portfolio.total}-->
+				   <!--{if $pageNumber eq $SiteData.portfolio.pageId}-->
+				   <span><!--{$pageNumber}--></span>
+				   <!--{else}-->
+				   <a href="<!--{$SiteData.portfolio.paginationUrl}-->&pageId=<!--{$pageNumber}-->"><!--{$pageNumber}--></a>
+				   <!--{/if}-->
+				<!--{/for}-->
+			</nav>
+		</footer>
 	</section>
 </section> <!-- end of CONTENT section-->
 <!--{/if}-->
@@ -54,22 +64,19 @@
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-general.jpg" alt="General" /></figure>
-							<span>General <small>(34 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							<span>General <small>(34 Images) </small></span>							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-bar.jpg" alt="Bar" /></figure>
 							<span>Bar <small>(14 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-winecellar.jpg" alt="Wine Cellar" /></figure>
-							<span>Wine Cellar <small>(14 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							<span>Wine Cellar <small>(14 Images) </small></span>							
 						</a>
 					</li>
 				</ul>
@@ -79,21 +86,21 @@
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-hometheatre.jpg" alt="Home Theatre" /></figure>
 							<span>Home Theatre <small>(17 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-fireplace.jpg" alt="Fire Place" /></figure>
 							<span>Fire Place <small>(17 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-bathroom.jpg" alt="Bathroom" /></figure>
 							<span>Bathroom <small>(17 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 				</ul>
@@ -103,21 +110,21 @@
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-deck.jpg" alt="Deck" /></figure>
 							<span>Deck <small>(17 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-millwork.jpg" alt="Millwork" /></figure>
 							<span>Millwork <small>(16 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-interior-trim.jpg" alt="Interior Trim" /></figure>
 							<span>Interior trim <small>(34 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 				</ul>
@@ -127,21 +134,21 @@
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-cabinet.jpg" alt="Cabinet" /></figure>
 							<span>Cabinet <small>(27 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-closet.jpg" alt="Closet" /></figure>
 							<span>Closet <small>(12 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-column.jpg" alt="Column" /></figure>
 							<span>Column <small>(21 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 				</ul>
@@ -151,17 +158,18 @@
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-cornish.jpg" alt="Cornish" /></figure>
 							<span>Cornish <small>(21 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 					<li>
 						<a href="javascript:void(0)">
 							<figure><img src="<!--{$imagePath}-->portfolio/cat-handrail.jpg" alt="Handrail" /></figure>
 							<span>Handrail <small>(21 Images) </small></span>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare. </p>
+							
 						</a>
 					</li>
 				</ul>
 			</section>
+
 		</section> <!-- end of CONTENT section-->
 		*}-->

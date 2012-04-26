@@ -39,11 +39,29 @@
 .services-box figure{
 	float: right;
 	margin: 0 0 20px 20px;
+	overflow: hidden;
 }
 
 .services-box figure img{
-	display: block
+	display: block;
+	-webkit-transition: all .8s linear;
+	-moz-transition: all .8s linear;
+	-o-transition: all .8s linear;
+	transition: all .8s linear;
+	
 }
+
+.services-box figure img:hover{
+	-webkit-transition: all .8s linear;
+	-moz-transition: all .8s linear;
+	-o-transition: all .8s linear;
+	transition: all .8s linear;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.26);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
 
 .services-box ul{
 	text-align: left;

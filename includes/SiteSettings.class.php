@@ -49,7 +49,7 @@ class SiteSettings {
 	public function setCoreJavascript(){
 		LiteFrame::IncludeJavascript('default.js');
 		
-		if( LiteFrame::getActiveAction() === 'portfolio' ){
+		if( LiteFrame::getActiveAction() === 'portfolio' || LiteFrame::getActiveAction() == 'homepage'  ){
 			LiteFrame::IncludeLibraryJavascript('fancybox/jquery.mousewheel.pack.js');
 			LiteFrame::IncludeLibraryJavascript('fancybox/jquery.fancybox.pack.js');
 			LiteFrame::IncludeLibraryJavascript('fancybox/helpers/jquery.fancybox-thumbs.js');
@@ -66,7 +66,11 @@ class SiteSettings {
 			
 		}
 
+		if( LiteFrame::getActiveAction() == 'homepage' ){
 		
+			LiteFrame::IncludeLibraryJavascript('plugins/jquery.carousel.js');
+		
+		}
 		/*LiteFrame::IncludeLibraryJavascript('plugins/jquery.gotop.js');
 		LiteFrame::IncludeJavascript('default.js');
 		if( SiteHelper::GetAction() === 'tools' ){

@@ -1,20 +1,30 @@
 		<section id="slide-show">
 			<ul id="slide-picture">
+				<li class="active">
+					<a href="<!--{$applicationPath}-->?action=services"><img src="<!--{$imagePath}-->slides/slide-dream.jpg" alt="We Build Your Dream House" /><div class="slide-description">We Build Your <br>Dream House</div></a>
+					
+				</li>
 				<li>
-					<img src="<!--{$imagePath}-->slides/slide-dream.jpg" alt="We Build Your Dream House" />
-					<div class="slide-description">We Build Your <br><strong>Dream</strong> House</div>
+					<a href="<!--{$applicationPath}-->?action=strategy">
+						<img src="<!--{$imagePath}-->slides/slide-phases.jpg" />
+						<div class="slide-description">Explore<br /> Our Strategy</div>
+					</a>
+					
 				</li>
-				<li style="display: none;">
-					<img src="<!--{$imagePath}-->slides/slide-phases.jpg" alt="Phases" />
+				<li>
+					<a href="<!--{$applicationPath}-->?action=portfolio"><img src="<!--{$imagePath}-->slides/slide-portfolio.jpg" /><div class="slide-description">Explore Our <br>Photo Gallery</div></a>
+					
 				</li>
-				<li style="display: none;">
-					<img src="<!--{$imagePath}-->slides/slide-portfolio.jpg" alt="Portfolio" />
+				<li>
+					<a href="<!--{$applicationPath}-->?action=contact"><img src="<!--{$imagePath}-->slides/slide-contact.jpg" />
+						<div class="slide-description">Call Us Now<br/> 703-568-5888</div>
+					</a>
+					
 				</li>
 			</ul>
 			<nav id="slide-navigation">
 				<ul id="slide-navigation-buttons">
 					<li class="active"><a href="javascript:void(0)"></a></li>
-					<li><a href="javascript:void(0)"></a></li>
 					<li><a href="javascript:void(0)"></a></li>
 					<li><a href="javascript:void(0)"></a></li>
 					<li><a href="javascript:void(0)"></a></li>
@@ -31,15 +41,15 @@
 					<div class="get-started"><a href="<!--{$applicationPath}-->?action=strategy"></a></div>
 				</section>
 				<aside id="welcome-picture">
-					<img src="<!--{$imagePath}-->img-welcome.jpg" alt="welcome picture" />
+					<img data-link="<!--{$applicationPath}-->?action=strategy" src="<!--{$imagePath}-->img-welcome.jpg" alt="welcome picture" />
 				</aside>
 			</div>
 			<div id="services-section" class="home-section">
-				<div class="section-title"><h2><span>Services</span></h2></div>
+				<div class="section-title"><h2 data-link="<!--{$applicationPath}-->?action=services"><span>Services</span></h2></div>
 				<section id="services-box">
 					<div id="residential-box" data-link="<!--{$applicationPath}-->?action=services#residential-box">	
 						<h3>Residential Service</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit euismod magna, porta suscipit magna elementum at. Nam congue erat. </p>
+						<p>Your house is perhaps your most valuable asset. It's more than a house, it's your home. Don't let just anyone work on your home - the team at Goal Construction is licensed, bonded, insured and experienced at all facets of home remodeling and additions.</p>
 						<ul>
 							<li>Community Building</li>
 							<li>Custom House Building</li>
@@ -52,7 +62,7 @@
 					</div>
 					<div id="commercial-box" data-link="<!--{$applicationPath}-->?action=services#commercial-box">	
 						<h3>Commercial Service</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit euismod magna, porta suscipit magna elementum at. Nam congue erat. </p>
+						<p>We're efficient, we pay close attention to your budget and we share your vision for the perfect commercial construction project. We know the ins and outs of the permitting process. We have an extensive network of the finest subcontractors and suppliers in DC area.</p>
 						<ul>
 							<li>Commercial Buildings &amp; Malls</li>
 							<li>Renovation</li>
@@ -63,9 +73,9 @@
 							<a href="<!--{$applicationPath}-->?action=services#commercial-box" class="more">More &raquo;</a>
 						</aside>
 					</div>
-					<div id="govermental-box" data-link="<!--{$applicationPath}-->?action=services#governmental-box">	
+					<div id="governmental-box" data-link="<!--{$applicationPath}-->?action=services#governmental-box">	
 						<h3>Governmental Service</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla hendrerit euismod magna, porta suscipit magna elementum at. Nam congue erat. </p>
+						<p>Goal Construction is a leading general contractor offering construction management services and specializing in the government construction industry. We are a family owned and operated company dedicated to providing quality construction at affordable prices.</p>
 						<ul>
 							<li>Federal Government</li>
 							<li>State Government</li>
@@ -80,65 +90,33 @@
 			</div>
 			<div id="portfolio-section" class="home-section">
 				<div class="section-title">
-					<h2><span>Portfolio</span></h2>
-					<a href="javascript:void(0)" class="view-all"><span>View all</span></a>
+					<h2 data-link="<!--{$applicationPath}-->?action=portfolio"><span>Portfolio</span></h2>
+					<a href="<!--{$applicationPath}-->?action=portfolio" class="view-all"><span>View all</span></a>
 				</div>
-				<div class="carousel" id="portfolio-holder">
-					<a class="prev-button" href="javascript:void(0)"></a>
-					<ul id="portfolio-list">
-						<li>
-							<div>
-								<a href="javascript:void(0)" class="pic-holder">
-									<span></span>
-									<img src="<!--{$imagePath}-->img-test01.jpg" alt="img-test01" />
-								</a>
-								<a class="view-in-gallery" href="javascript:void(0)">View in gallery</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="javascript:void(0)" class="pic-holder">
-									<span></span>
-									<img src="<!--{$imagePath}-->img-test01.jpg" alt="img-test01" />
-								</a>
-								<a class="view-in-gallery" href="javascript:void(0)">View in gallery</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="javascript:void(0)" class="pic-holder">
-									<span></span>
-									<img src="<!--{$imagePath}-->img-test01.jpg" alt="img-test01" />
-								</a>
-								<a class="view-in-gallery" href="javascript:void(0)">View in gallery</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="javascript:void(0)" class="pic-holder">
-									<span></span>
-									<img src="<!--{$imagePath}-->img-test01.jpg" alt="img-test01" />
-								</a>
-								<a class="view-in-gallery" href="javascript:void(0)">View in gallery</a>
-							</div>
-						</li>
-						<li>
-							<div>
-								<a href="javascript:void(0)" class="pic-holder">
-									<span></span>
-									<img src="<!--{$imagePath}-->img-test01.jpg" alt="img-test01" />
-								</a>
-								<a class="view-in-gallery" href="javascript:void(0)">View in gallery</a>
-							</div>
-						</li>
-					</ul>
-					<a class="next-button" href="javascript:void(0)"></a>
+				<div class="carousel clearfix" id="portfolio-holder">
+					<a class="prev" href="javascript:void(0)"></a>
+					<nav id="portfolio-list">
+						<ul class="clearfix">
+							<!--{foreach from=$SiteData.homepage.portfolio key=k item=image}-->
+							<li>
+								<div>
+									<a href="<!--{$image.url}-->" class="pic-holder"  data-fancybox-group="thumb">
+										<span></span>
+										<img src="<!--{$image.url}-->" width="150" height="100"  />
+									</a>
+									<a class="view-in-gallery" href="<!--{$image.galleryUrl}-->">View in gallery</a>
+								</div>
+							</li>
+							<!--{/foreach}-->							
+						</ul>
+					</nav>
+					<a class="next" href="javascript:void(0)"></a>
 				</div>
 			</div>
 			<div id="brands-section" class="home-section">
 				<div class="line-divider">&nbsp;</div>
 				<section>
-					<div class="section-title"><h2><span>Brands</span></h2></div>
+					<div class="section-title"><h2 data-link="<!--{$applicationPath}-->?action=brands"><span>Brands</span></h2></div>
 					<div id="brands-holder" class="carousel">
 						<a class="prev-button" href="javascript:void(0)"></a>
 						<ul id="brands-list">
@@ -154,3 +132,4 @@
 				</section>
 			</div>
 		</section> <!-- end of CONTENT section-->
+		<div class="divider"></div>
