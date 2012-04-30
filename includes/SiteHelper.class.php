@@ -20,7 +20,7 @@ require_once(LiteFrame::GetFileSystemPath()."includes/modules/debugging/Debug.cl
 
 class SiteHelper {
 	
-	static  $staticObjects = array("Title","MainNav");
+	static  $staticObjects = array("Title","MainNav","Meta");
 	static  $tools;
 	public  static $siteObjectsData = null;
 	private $ajaxRequest = false;	

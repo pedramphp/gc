@@ -112,13 +112,6 @@ nav ul, nav li{
 	margin-left: 10px;
 }
 
-#call-us a{
-	width: 16px;
-	height: 20px;
-	background: transparent url("images/icon-socials-header.png") no-repeat;
-	float: left;
-	margin-left: 5px;
-}
 
 #call-us a.fb {
 	background-position: left top;

@@ -25,66 +25,19 @@ $(document).ready(function(){
 		}
 	});
 	
-
 	
-});
-
-
-
-var activeIndex = 0,
-	slideshow,
-	timeout,
-	slideshowFunc = function(){
+	
+	$('#slide-picture').fadeIn().cycle({
+		fx: 'fade',
+		timeout: 5000,
+		activePagerClass: 'active',
+		pager: '#slide-navigation-buttons',
+		pagerAnchorBuilder: function(idx, slide){
+			return '<li><a href="#"></a></li>';
 		
-		slideshow = setInterval(function(){
-			
-			if( activeIndex === $("#slide-picture li").length -1 ){
-				activeIndex = 0;
-			}else{
-				activeIndex++;
-			}
-			
-			changeImage();
-
-		
-		},5000);		
-	
-	},
-	changeImage = function(){
-		$("#slide-navigation-buttons").find(".active").removeClass("active")
-                                         .end()
-                                         .find("li:eq("+activeIndex+")").addClass("active");
-                                       
-                                       
-                                       
-$("#slide-picture").find(".active").fadeOut(500,function(){ $(this).removeClass("active"); })
-                                       .end().find("li:eq("+activeIndex+")").fadeIn(500,function(){ $(this).addClass("active"); });
-
-	
-	}
-	
-	
-
-$(window).load(function(){
-
-	slideshowFunc();
-	
-	$("#slide-navigation-buttons a").click(function(e){
-		e.preventDefault();
-		if( $("#slide-navigation-buttons").is(".active")){
-			return;
 		}
-		clearTimeout(timeout);
-		activeIndex = $("#slide-navigation-buttons a").index($(this));
-		
-		changeImage();
-		clearInterval(slideshow);
-		
-		timeout = setTimeout(slideshowFunc, 5000);
-	
 	});
 	
+		
 });
-
-
 

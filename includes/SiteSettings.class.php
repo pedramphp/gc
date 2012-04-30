@@ -69,7 +69,10 @@ class SiteSettings {
 		if( LiteFrame::getActiveAction() == 'homepage' ){
 		
 			LiteFrame::IncludeLibraryJavascript('plugins/jquery.carousel.js');
-		
+			
+			LiteFrame::IncludeLibraryJavascript('plugins/jquery.cycle.lite.min.js');
+			
+					
 		}
 		/*LiteFrame::IncludeLibraryJavascript('plugins/jquery.gotop.js');
 		LiteFrame::IncludeJavascript('default.js');

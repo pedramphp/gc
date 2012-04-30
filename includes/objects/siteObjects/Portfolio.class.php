@@ -22,6 +22,18 @@
 			         )
 			     )
 			 );
+			 
+			 $portfolios[] = array(
+			      "id" => "court-house",
+			      "title" => "9405 Old Court Hourse Rd, Vienna VA",
+			      "desc" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in pretium neque. Morbi mollis condimentum urna, vitae aliquet dui ornare.",
+			      "image-cats" => array(
+			          "-1" => array(
+			              "title" => "Court House",
+			              "size" => 39
+			          )
+			      )
+			  );
 
 			$portfolios[] = array(
 			     "id" => "bar",
@@ -256,9 +268,19 @@
 			 );
 		
 						
-
-
 			
+			$portfolios[] = array(
+			    "id" => "under-construction",
+			    "title" => "Under Construction",
+			    "desc" =>  "Click here to browse and experience the most magnificent Handrail photo gallery built and developed by Goal Construction.",
+			    "image-cats" => array(
+			        "-1" => array(
+			            "title" => "Under Construction",
+			            "size" => 3
+			        )
+			    )
+			);
+						
 			$vars = LiteFrame::FetchGetVariable();
 			if(isset($vars['catId'])){
 				$subCats = array();
