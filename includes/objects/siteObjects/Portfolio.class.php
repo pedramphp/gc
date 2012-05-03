@@ -30,22 +30,23 @@
 			      "image-cats" => array(
 			          "-1" => array(
 			              "title" => "Court House",
-			              "size" => 39
+			              "size" => 32
 			          )
 			      )
 			  );
-
+			  
 			$portfolios[] = array(
-			     "id" => "bar",
-			     "title" => "Bar",
-			     "desc" => "Click here to browse and experience the most magnificent Bar photo gallery built and developed by Goal Construction.",
-			     "image-cats" => array(
-			         "-1" => array(
-			             "title" => "Bar",
-			             "size" => 19
-			         )
-			     )
-			 );
+			    "id" => "under-construction",
+			    "title" => "Under Construction",
+			    "desc" =>  "Click here to browse and experience the most magnificent Handrail photo gallery built and developed by Goal Construction.",
+			    "image-cats" => array(
+			        "-1" => array(
+			            "title" => "Under Construction",
+			            "size" => 3
+			        )
+			    )
+			);  
+			
 			 
 			 $portfolios[] = array(
 			      "id" => "wine-cellar",
@@ -267,19 +268,17 @@
 			     )
 			 );
 		
-						
-			
 			$portfolios[] = array(
-			    "id" => "under-construction",
-			    "title" => "Under Construction",
-			    "desc" =>  "Click here to browse and experience the most magnificent Handrail photo gallery built and developed by Goal Construction.",
-			    "image-cats" => array(
-			        "-1" => array(
-			            "title" => "Under Construction",
-			            "size" => 3
-			        )
-			    )
-			);
+			     "id" => "bar",
+			     "title" => "Bar",
+			     "desc" => "Click here to browse and experience the most magnificent Bar photo gallery built and developed by Goal Construction.",
+			     "image-cats" => array(
+			         "-1" => array(
+			             "title" => "Bar",
+			             "size" => 19
+			         )
+			     )
+			 );
 						
 			$vars = LiteFrame::FetchGetVariable();
 			if(isset($vars['catId'])){

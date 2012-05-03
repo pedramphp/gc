@@ -211,8 +211,8 @@ nav ul, nav li{
 	width: 961px;
 	height: 360px;
 	display: none;
-	left: 9px;
-	top: 9px;
+	left: 9px !important;
+	top: 9px !important;
 }
 
 #slide-picture li .slide-description{
@@ -442,7 +442,7 @@ nav ul, nav li{
 }
 
 #services-box .box-picture img{
-	box-shadow: 3px 3px 5px 0 #666666;
+	box-shadow: 0 6px 2px -3px #666666;
 }
 
 
