@@ -77,7 +77,7 @@
 }
 
 .contact-form .error input,
-.contact-form .error input:focus, .contact-form .error textarea:focus, .contact-form .error select:focus {
+.contact-form .error input:focus, .contact-form .error textarea:focus, .contact-form .error select {
 	color: #cc3333;
 	background-color: #ffcece;
 	border-color: #ffa6a6;
