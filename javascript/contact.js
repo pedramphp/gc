@@ -48,7 +48,7 @@ var contact = {
                               $that.next(".notification").remove();     
 		   }else if( $that.attr("id") == "emailAddr" && /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test($that.val()) === true){
 			     $that.parents("p").removeClass("error");
-                              $that..next(".notification").remove();   
+                              $that.next(".notification").remove();   
 		  }
 	},
 		
@@ -68,12 +68,12 @@ var contact = {
 				status = false;
 				//return;
 				$(this).parents("p").addClass("error");
-				$(this).after("<span class='notification'>Please enter a valid "+$.trim($(this).prev().text())+"<span>");
+				if(!$(this).next('.notification').length) $(this).after("<span class='notification'>Please enter a valid "+$.trim($(this).prev().text())+"<span>");
 			}else if( $(this).attr("id") == "emailAddr" && /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test($(this).val()) === false){
 				//alert("Please enter a valid email address");
 				status = false;
                                 $(this).parents("p").addClass("error");
-                                $(this).after("<span class='notification'>Please enter a valid email address<<span>");
+                               if(!$(this).next('.notification').length)  $(this).after("<span class='notification'>Please enter a valid email address<<span>");
 			}else{
 				 $(this).parents("p").removeClass("error");
 				 $(this).next(".notification").remove();
