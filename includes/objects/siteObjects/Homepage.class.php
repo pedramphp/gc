@@ -11,7 +11,7 @@
 		
 				$images = array();
 				$catsLen = 1;
-				$len = 16;
+				$len = 20;
 				$portfolioId = "general";
 				$subCatkey = null;
 				for($i=1; $i<=$len; $i++){

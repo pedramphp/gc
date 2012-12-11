@@ -1,16 +1,18 @@
 <footer id="footer">
 	<aside>
 		<nav id="footer-links">
-			<!--{foreach from=$SiteData.mainNav key=k item=nav name=nav}-->
-			<li<!--{if $smarty.foreach.nav.first}--> class="first"<!--{/if}--><!--{if $smarty.foreach.nav.last}--> class="last"<!--{/if}-->>
-				<a href="<!--{$nav.url}-->">
-					<span><!--{$nav.value}--></span>
-				</a>
-			</li>
-			<!--{/foreach}-->
+			<ul>
+				<!--{foreach from=$SiteData.mainNav key=k item=nav name=nav}-->
+				<li<!--{if $smarty.foreach.nav.first}--> class="first"<!--{/if}--><!--{if $smarty.foreach.nav.last}--> class="last"<!--{/if}-->>
+					<a href="<!--{$nav.url}-->">
+						<span><!--{$nav.value}--></span>
+					</a>
+				</li>
+				<!--{/foreach}-->
+			</ul>
 		</nav>
 		<p>Copyright &copy; 2012 GoalConstruction. All rights reserved.</p>
-		<p class="footer-designed-mexo">Designed and developed by <a class="mexo-logo" href="http://mexo.co"><img src="<!--{$imagePath}-->logo-mexo.png" alt="Mexo"/></a></p>
+		<p class="footer-designed-mexo">Designed and developed by <a class="mexo-logo" href="http://mexoinc.com"><img src="<!--{$imagePath}-->logo-mexo.png" alt="Mexo Inc"/></a><a class="curlybit-logo" href="http://curlybit.com"><img src="<!--{$imagePath}-->logo-curlybit.png" alt="Curlybit Inc"/></a></p>
 	</aside>
 	<section>
 		<div>
@@ -24,4 +26,18 @@
 			<p>Tel: 703-256-5498 | Fax: 703-256-5499</p>
 		</div>
 	</section>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34785759-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </footer>

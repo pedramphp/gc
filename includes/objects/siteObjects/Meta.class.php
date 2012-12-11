@@ -1,39 +1,49 @@
 <?php 
 
 	class Meta extends SiteObject {
-		
+
 		public function __construct(){
 			parent::__construct();
 		}
-		
-		
+
+
 		public function process(){
-			$description = "We build your dream house,we work closely with clients, architects, and subcontractors toward the common goal of successful project delivery";
-			
-			$keyword = "house construction,construction home,new home builders,custom build your own home,remodeling a home,brand new homes construction,northern virginia custom homeuilders,log home builders,general contactor,luxury home builders,new custome home builder";
+			$description = "Home builder Virginia - Goal construction is a leading custom new home builder in Virginia. We've been building custom homes in Virginia for over 15 years. Build your dream home with Goal Construction!";
+
+			$keyword = "custom home builder virginia, home builder virginia, new home builder virginia,  luxury home builder virginia,  home builder va,  custom home builder va, new home builder va";
 			switch(LiteFrame::getActiveAction()){	
 				case "services":
-					$keyword = "additions to homes cost,home remodling websites,house remodeling plans,home repair contractor,house remodel plans,remodeling architects,remodeling designers,ideas for home additions,home renovation,custom home construction";
+					$description = "General contactor of Goal Construction Virginia provides commercial construction, home remodeling &  government construction services in VA. Contact our general contactor Virginia for your construction needs at 703-568-5888.";
+					$keyword = "commercial construction va, home remodeling virginia, general contractor virginia,  residentail construction va,  home remodeling va";
 					break;
 				case "portfolio":
-					$keyword = "professional portfolio,residential construction portfolio,custom home building portfolio,brand new homes portfolio";
+					$keyword = "wine cellar design, home theater design, kitchen remodeling Virginia, fire place design, deck design and restoration, bathroom design, millwork design, interior trim design, custom closet design, Cornish design, custom handrail design, bar remodeling virginia";
 					break;
 				case "strategy":
-					$keyword = "home construction financing,home lenders, new construction financing,renovation loans,house plans,building loans,residential construction financing";
+					$description = "Goal Construction follows step-by-step process to build you dream home. It includes design, finance, construction phases.";
+					$keyword = "phases of construction, Construction Strategies, Construction Strategies of Goal construction, construction financing phases";
 					break;
 				case "brands":
-					$keyword = "pocket door construction,frameless cabinet construction, door construction details, frameless kitchen cabinet,construction,cabinet door construction";
+					$keyword = "pocket door construction, frameless cabinet construction, door construction details, frameless kitchen cabinet construction, cabinet door construction";
 					break;
 				case "about":
-					$keyword = "home builder,new home builders,luxury home building,build your own home,design your own home,custom luxury home builders,custom home plan,custom build homes,new home builders,home construction";
+					$description = "Goal Construction has become a well-trusted name in constucrion industry in Virginia. Contact us if you want to build your new home!";
+					$keyword = "About Goal Construction, Goal Construction Virginia, Goal Construction va";
 					break;
-						
+				case "contact":
+					$description = "Contact Goal Construction if you want to build your luxury new home at 703-568-5888. For Free Consultation, Call Us Now.";
+					$keyword = "Contact Goal Construction,  Contact Goal Construction va,  Contact Goal Construction virginia, commercial construction company mclean virginia, residential construction company mclean virginia, construction management companies mclean virginia";
+					break;
+				case "faq":
+					$keyword = "house construction, construction home, new home builders, custom build your own home, remodeling a home, brand new homes construction, northern virginia custom homebuilders ,log home builders, general contractor, luxury home builders, new custom home builder, new construction questions";
+					break;
+
 			}
 			$this->results["keyword"] = $keyword;
 			$this->results["description"] = $description;
-			
+
 		}
-		
+
 	}
 
 
